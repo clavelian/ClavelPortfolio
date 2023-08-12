@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clavelian Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="overflow-hidden bg-black text-white h-[100vh]">
-  <header class="flex justify-between items-center laptop:mx-56 laptop:mt-28 tablet:mx-20 tablet:mt-16 mobile:mr-5 mobile:ml-10 mobile:mt-10">
-      <h1 class="text-2xl"><a href="main.html"><strong class="text-red-600">&ltClavel</strong><strong>ian&gt</strong></a></h1>
-    <nav class="flex justify-between items-center mx-5">
-      <ul class="flex justify-between gap-10 items-center">
-        <li class="mobile:hidden"><a href="about.html">About</a></li>
-        <li class="mobile:hidden"><a href="projects.html">Projects</a></li>
-        <li class="mobile:hidden"><a href="contact.html">Contact</a></li>
+<body class=" bg-gray-400 text-black">
+  <header class="flex justify-between items-center laptop:px-10 laptop:pt-10 tablet:px-10 tablet:pt-10 mobile:pt-10 mobile pl-10 ">
+      <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600">&ltClavel</strong><strong>ian&gt</strong></a></h1></code>
+    <nav class="flex justify-between items-center mr-5">
+  <!--navbar-->
+      <ul class="flex justify-between items-center mobile:gap-7">
+        <li class="mobile:hidden hover:bg-red-500 transition-colors duration-200 py-2 px-3 rounded-lg"><a href="#about"">About</a></li>
+        <li class="mobile:hidden hover:bg-red-500 py-2 px-3 rounded-lg"><a href="#">Projects</a></li>
+        <li class="mobile:hidden hover:bg-red-500 py-2 px-3 rounded-lg"><a href="#">Contact</a></li>
         <span class="text-2xl laptop:hidden tablet:hidden"><ion-icon name="grid-outline"></ion-icon></span>
-        <span class="text-2xl mobile:hidden"><ion-icon name="sunny-outline"></ion-icon></span>
+        <span class="text-2xl p-2"><ion-icon name="sunny-outline"></ion-icon></span>
       </ul>
     </nav>
   </header>
+  <!--Body-->
   <main class="mt-10 mx-10">
   <section class="flex justify-center">
-    <p class="text-2xl pt-1 ">I am<span class="typing-text"></span><span class="cursor inline-block bg-black ml-1"></span></p>
+    <p class="text-2xl pt-1">I am<span class="typing-text"></span><span class="cursor inline-block bg-black ml-1"></span></p>
   </section>
-
-    <section class="">
-      <div class="pt-7">
-        <p>I am a frontend software engineer, currently focused on building beautiful web interfaces and web applications</p>
+  <!--main section-->
+  <div class="flex mobile:flex-col justify-center">
+    <section class="flex h-screen">
+      <div class="pt-28">
+        <p class="absolute">I am a frontend software engineer, currently focused on building beautiful web interfaces and responsive web applications</p>
       </div>
+      <figure class="mobile:pt-36 mobile:pl-16">
+      <img class="object-contain h-auto w-auto rounded-3xl shadow-md mobile:w-56" src="photo.PNG" alt="photo">
+      </figure>
     </section>
-
+  </div>
+    <!--about me section-->
     <section>
-    <p>About me</p>
+    <div>
+    <p id="about">About me</p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a ad repellendus, sequi optio doloremque corporis id voluptates velit odit nulla eligendi, sunt accusantium? Quidem saepe ipsa alias tenetur consequuntur!
-      <!--icons-->
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum modi tenetur, voluptates nesciunt sit saepe. Debitis nemo laboriosam nisi animi, fugiat, unde cupiditate provident corrupti perspiciatis expedita autem, hic veniam.
+  <!--icons-->
     </p>
-    <span class="text-2xl "><ion-icon name="sunny-outline"></ion-icon></span>
-
-
-    
-    
+    </div>
+    <a href="https://github.com/clavelian"><ion-icon name="logo-github" class="text-6xl"><</ion-icon></a>
+    <a href="https://www.linkedin.com/in/ian-clavel-b88844252/"><ion-icon name="logo-linkedin" class="text-6xl"></ion-icon></a>
+    </head>
     </section>
     </main>
 <script src="script.js"></script>
-<footer class="bg-slate-700">This is a footer</footer>
 </body>
 </html>
